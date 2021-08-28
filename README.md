@@ -1,6 +1,6 @@
 # Frey
 
-## 1. Demo
+## Demo
 [Click here](http://frey.perfectorium.info/) to go to the Demo.
 
 ## 1. How to run
