@@ -1,0 +1,18 @@
+// ############ Fonts ############
+
+@mixin font-face ($name, $file-name, $font-weight, $font-style: normal) {
+  @font-face {
+      font-family: $name;
+      src: url('../fonts/#{$file-name}.woff2') format('woff2'),
+          url('../fonts/#{$file-name}.woff') format('woff');
+      font-weight: $font-weight;
+      font-style: $font-style;
+  }
+}
+
+
+$BasisGrotesquePro:         'Basis Grotesque Pro';
+@include font-face($BasisGrotesquePro, 'BasisGrotesquePro-Regular', 400);
+@include font-face($BasisGrotesquePro, 'BasisGrotesquePro-Bold', 700);
+
+$font-primary:       $BasisGrotesquePro, sans-serif;
